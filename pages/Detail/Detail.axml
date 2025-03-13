@@ -1,0 +1,40 @@
+<view class="container">
+
+  <image src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" class="movie-poster" mode="aspectFill" />
+
+
+  <view class="movie-info">
+    <text class="movie-title">{{movie.title}}</text>
+    <text class="movie-release-date">{{movie.release_date}}</text>
+    <text class="movie-rating">⭐ {{movie.vote_average}}/10</text>
+  </view>
+
+
+  <button class="favorite-button" onTap="toggleFavorite">
+    {{isFavorite ? 'Eliminar de favoritos' : 'Agregar a favoritos'}}
+  </button>
+
+  <!-- Sinopsis -->
+  <view class="section">
+    <text class="section-title">Sinopsis</text>
+    <text class="movie-overview">{{movie.overview}}</text>
+  </view>
+
+  <!-- Géneros -->
+  <view class="section">
+    <text class="section-title">Géneros</text>
+    <view class="genres">
+      <block a:for="{{movie.genres}}" a:key="id">
+        <text class="genre">{{item.name}}</text>
+      </block>
+    </view>
+  </view>
+
+  <!-- Información adicional -->
+  <view class="section">
+    <text class="section-title">Información Adicional </text>
+    <text class="info-item">Duración: {{movie.runtime}} minutos</text>
+    <text class="info-item">Presupuesto: ${{movie.budget.toLocaleString()}}</text>
+    <text class="info-item">Ingresos: ${{movie.revenue.toLocaleString()}}</text>
+  </view>
+</view>

@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rpx; 
+  justify-items: center; 
+  width: 100%;
+}
+
+.movie-card {
+  width: 100% !important;
+  border-radius: 16rpx;
+  overflow: hidden;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.1);
+}
+
+/* Botón de favoritos */
+.favorites-button {
+  position: fixed;
+  bottom: 40rpx;
+  right: 40rpx;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1rpx solid #eee;
+  border-radius: 50rpx;
+  padding: 15rpx 25rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+}
+
+.heart-icon {
+  font-size: 36rpx;
+  color: #ff4081;
+  margin-right: 10rpx;
+}
+
+.button-text {
+  font-size: 28rpx;
+  color: #333;
+}

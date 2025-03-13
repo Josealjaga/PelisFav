@@ -1,0 +1,4 @@
+<view class="movie-card" onTap="onMovieTap" data-id="{{movie.id}}">
+  <image src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" class="movie-poster"></image>
+  <text class="movie-title">{{movie.title}}</text>
+</view>

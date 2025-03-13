@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="header">
+    <text class="title">Mis Favoritos</text>
+  </view>
+  <favorites-list />
+</view>

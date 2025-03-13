@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "favorites-list": "/components/FavoritesList/FavoritesList"
+  },
+  "styleIsolation": "apply-shared"
+}

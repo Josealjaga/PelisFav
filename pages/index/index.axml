@@ -1,0 +1,17 @@
+<view class="container">
+  <!-- Botón de favoritos flotante -->
+  <view 
+    class="favorites-button"
+    onTap="navigateToFavorites"
+  >
+    <view class="heart-icon">❤️</view>
+    <text class="button-text">Mis Favoritos</text>
+  </view>
+
+  <search-bar />
+  <view class="movie-list">
+    <block a:for="{{movies}}" a:key="id">
+      <movie-card movie="{{item}}" />
+    </block>
+  </view>
+</view>

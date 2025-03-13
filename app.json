@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Detail/Detail",
+    "pages/Favorites/Favorites"
+  ],
+  "window": {
+    "defaultTitle": "PelisFav"
+  }
+}

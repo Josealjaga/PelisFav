@@ -1,0 +1,18 @@
+<view class="search-bar">
+  <input 
+    placeholder="Buscar películas" 
+    onInput="onInput" 
+    value="{{query}}"
+  />
+  <view class="suggestions">
+    <block a:for="{{suggestions}}" a:key="id">
+      <view 
+        class="suggestion-item" 
+        onTap="onSuggestionTap" 
+        data-id="{{item.id}}"
+      >
+        {{item.title}}
+      </view>
+    </block>
+  </view>
+</view>

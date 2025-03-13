@@ -1,0 +1,5 @@
+<view class="favorites-list">
+  <block a:for="{{favorites}}" a:key="id">
+    <movie-card movie="{{item}}" />
+  </block>
+</view>
