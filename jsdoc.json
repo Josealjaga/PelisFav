@@ -1,0 +1,18 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "source": {
+    "include": ["app.js", "pages", "services"],
+    "exclude": ["node_modules"]
+  },
+  "plugins": [],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true
+  },
+  "opts": {
+    "destination": "./docs",
+    "recurse": true
+  }
+}
